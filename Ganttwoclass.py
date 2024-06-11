@@ -43,12 +43,13 @@ except:
 
 # Read Excel dat
 # 1) Schedule data, read and store in a pandas DataFrame
-schData = pd.read_excel(io = filename, sheet_name= wsname1, index_col=None, usecols = 'A:K', skiprows = 2,)
+#schData = pd.read_excel(io = filename, sheet_name= wsname1, index_col=None, usecols = 'A:K', skiprows = 2,)
+schData = ws1.range('A3').options(pd.DataFrame, index=False, header=1, expand='table').value
 print(schData)
 size = len(schData)
 # 2) Calendar data, read and store in a pandas DataFrame
-calData = pd.read_csv(filename,wsname2, index_col=None, usecols= 'A:D',)
-
+calData = ws2.range('A1').options(pd.DataFrame, index=False, header=True, expand='table').value
+print(calData)
 
 # Validate Excel data
 # 1) Validate schedule data
@@ -87,8 +88,8 @@ relations = match_pred(predecessors, relations ,'Relationship')
 lags = match_pred(predecessors, lags, 'Time lag')
 
 #(2) Sort out Holidays and non work days into corresponding list
-holidays = calData['Date'].loc[calData['Type'] == 'Holiday'].values
-nonworkdays = calData['Note'].loc[(calData['Type'] == 'Weekday') & (calData['Hours'] == 0)].values
+holidays = calData['Date'].loc[calData['type'] == 'Holiday'].values
+nonworkdays = calData['Note'].loc[(calData['type'] == 'Weekday') & (calData['Hours'] == 0)].values
 
 #(3) Create predecessor - seccessor list, each one to one relation
 # Create the list of 
@@ -96,7 +97,7 @@ nonworkdays = calData['Note'].loc[(calData['Type'] == 'Weekday') & (calData['Hou
 
 ps = pslist(schData['Activity'], predecessors, schData['Period'], relations, lags)
 # predecessors should refer to defined activity only
-alertReference(ps['Predecessor'], schData['Activity'])
+#alertReference(ps['Predecessor'], schData['Activity'])
 
 # (4) Find out project start activity and project end activity
 p = set(ps['Predecessor'])

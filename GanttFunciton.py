@@ -40,10 +40,16 @@ def alertPeriodBlank(df):
         pymsgbox.alert(text= acts + ' period is blank.', title = 'Activites with blank period')
         sys.exit()
 def alertDataEntry(df):
-    acts = [df['Activity'][i] for i in range(len(df['Activity'])) if df['Predecessor'].isnull()[i] == True & df['Start']isnull()[i] == True ] # == ['nan]] #['nan'] ]
-    if len(acts) > 0:
-        acts = ', '.join([str(x) for x in acts])
-        pymsgbox.alert(text= acts + 'start date are not specified for ' + acts + ' without predecessors involved.', title = 'Activites without predecessors')
+    # Filter activities without predecessors and with unspecified start dates
+    filtered_activities = df[(df['Predecessor'].isnull()) & (df['Start'].isnull())]
+    
+    if not filtered_activities.empty:
+        # Join the activities into a comma-separated string
+        activities_str = ', '.join(filtered_activities['Activity'])
+        
+        # Display alert
+        pymsgbox.alert(text=f"Start dates are not specified for the following activities without predecessors involved: {activities_str}", 
+                       title="Activities without predecessors")
         sys.exit()
 
 def remove_space(list):
@@ -135,7 +141,7 @@ def pslist(activities, predecessors, periods, relations, lags):
     ps = pd.DataFrame(columns= ['Predecessor','Successor', 'Pred duration','Succ duration','Timelag fs','relation', 'lag','predid', 'succid'])
     n = 0
     for i in range(len(predecessors[i])):
-        if predecessors[i] != ['nan']
+        if predecessors[i] != ['nan']:
             for j in range(len(predecessors[i])):
                 pred = predecessors[i][j]
                 succ = activities[i]
