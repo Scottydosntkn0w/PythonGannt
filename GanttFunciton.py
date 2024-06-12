@@ -140,8 +140,8 @@ def pslist(activities, predecessors, periods, relations, lags):
     """
     ps = pd.DataFrame(columns= ['Predecessor','Successor', 'Pred duration','Succ duration','Timelag fs','relation', 'lag','predid', 'succid'])
     n = 0
-    for i in range(len(predecessors[i])):
-        if predecessors[i] != ['nan']:
+    for i in range(len(activities)):
+        if predecessors[i] != ['None']:
             for j in range(len(predecessors[i])):
                 pred = predecessors[i][j]
                 succ = activities[i]
@@ -151,7 +151,7 @@ def pslist(activities, predecessors, periods, relations, lags):
                 predPeriod = periods.loc[activities == pred].values[0]
                 succPeriod = periods[i]
                 relation = relations[i][j]
-                lag = int(lags[i][j])
+                lag = int(float(lags[i][j]))
                 predId = activities.loc[activities == pred].index.values[0]
                 succId = i
                 if predId > succId:

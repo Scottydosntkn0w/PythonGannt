@@ -121,14 +121,14 @@ for x in startActs:
     schData['Start'][i] = earlySch[0]
     schData['Finish'][i] = earlySch[1]
 for i in range(len(schData)):
-    if predecessors[i] != ['nan']:
+    if predecessors[i] != ['None']:
         preds = predecessors[i]
         predsEnds = []
         for j in range(len(preds)):
-            predsLag = ps['Time lag fs'].loc[(ps['Predecessor'] == preds[j]) & (ps['Successor'] == schData['Activity'][i])].values[0]
+            predsLag = ps['Timelag fs'].loc[(ps['Predecessor'] == preds[j]) & (ps['Successor'] == schData['Activity'][i])].values[0]
             predsEnd = pd.Timestamp(schData['Finish'].loc[schData['Activity'] == preds[j]].values[0])
-            predsEnd.append(endDate(predsEnd, predsLag, holidays, nonworkdays, False)[1])
-        schData['Start'][i] = endDate(max(predsEnd), 1, holidays, nonworkdays, False)[1]
+            predsEnds.append(endDate(predsEnd, predsLag, holidays, nonworkdays, False)[1])
+        schData['Start'][i] = endDate(max(predsEnds), 1, holidays, nonworkdays, False)[1]
         schData['Finish'][i] = endDate(schData['Start'][i], schData['Period'][i], holidays, nonworkdays, True)[1]
 
 # transverse list in the reverse order
@@ -141,7 +141,7 @@ for i in range(len(schData)-1, -1, -1):
     if len(succs) != 0:
         succStarts = []
         for j in range(len(succs)):
-            succLag = ps['Time lag fs'].loc[(ps['Successor'] == succs[j]) & (ps['Predecessor'] == schData['Activity'][i])].values[0]
+            succLag = ps['Timelag fs'].loc[(ps['Successor'] == succs[j]) & (ps['Predecessor'] == schData['Activity'][i])].values[0]
             succStart = pd.Timestamp(schData['Late Start'].loc[schData['Activity'] == succs[j]].values[0])
             succStarts.append(endDate(succStart, -succLag, holidays, nonworkdays, False)[1])
         schData['Late Finish'][i] = endDate(min(succStarts), -1, holidays, nonworkdays, False)[1]
