@@ -1,0 +1,248 @@
+TaskID,ProjectID,WorkflowID,TaskName,StartDate,EndDate,Duration,WorkflowTaskID
+0,1,1,print packets,,,39780.0,1
+1,1,1,agriculex pack packets,,,216138.0,2
+2,1,1,plot order sorting,,,5.4775,3
+3,1,1,QC set,,,663.0,4
+4,1,1,QC packet,,,13260.0,5
+5,2,2,print packets,,,17100.0,6
+6,2,2,pull source bag,,,150.0,7
+7,2,2,treat seed (source bag),,,825.0,8
+8,2,2,associate packets and sources,,,164.325,9
+9,2,2,agriculex change source,,,1275.0,10
+10,2,2,agriculex pack packets,,,92910.0,11
+11,2,2,agriculex organize sleeve,,,165.0,12
+12,2,2,agriculex clear out,,,540.0,13
+13,2,2,sorting sleeve exchange,,,660.0,14
+14,2,2,plot order sorting,,,164.325,15
+15,2,2,field order sorting,,,62443.5,16
+16,3,3,print packets,,,45000.0,17
+17,3,3,pull source bag,,,60.0,18
+18,3,3,treat seed (source bag),,,330.0,19
+19,3,3,associate packets and sources,,,65.73,20
+20,3,3,agriculex change source,,,510.0,21
+21,3,3,agriculex pack packets,,,244500.0,22
+22,3,3,agriculex organize sleeve,,,66.0,23
+23,3,3,agriculex clear out,,,216.0,24
+24,3,3,sorting sleeve exchange,,,264.0,25
+25,3,3,plot order sorting,,,65.73,26
+26,3,3,field order sorting,,,164325.0,27
+27,4,4,print packets,,,4800.0,28
+28,4,4,pull source bag,,,4000.0,29
+29,4,4,treat seed (source bag),,,22000.0,30
+30,4,4,associate packets and sources,,,4382.0,31
+31,4,4,agriculex change source,,,34000.0,32
+32,4,4,agriculex pack packets,,,26080.0,33
+33,4,4,agriculex organize sleeve,,,1466.6666666666667,34
+34,4,4,agriculex clear out,,,14400.0,35
+35,4,4,sorting sleeve exchange,,,5866.666666666667,36
+36,4,4,plot order sorting,,,1460.6666666666667,37
+37,4,4,walk between sets,,,75.0,38
+38,4,4,QC set,,,200.0,39
+39,4,4,QC packet,,,1600.0,40
+40,4,4,field order sorting,,,17528.0,41
+41,4,4,QC set,,,200.0,42
+42,4,4,QC packet,,,1600.0,43
+43,4,4,palletize to field order,,,200.0,44
+44,5,4,print packets,,,2376.0,28
+45,5,4,pull source bag,,,660.0,29
+46,5,4,treat seed (source bag),,,3630.0,30
+47,5,4,associate packets and sources,,,723.03,31
+48,5,4,agriculex change source,,,5610.0,32
+49,5,4,agriculex pack packets,,,12909.6,33
+50,5,4,agriculex organize sleeve,,,363.0,34
+51,5,4,agriculex clear out,,,2376.0,35
+52,5,4,sorting sleeve exchange,,,1452.0,36
+53,5,4,plot order sorting,,,361.515,37
+54,5,4,walk between sets,,,50.0,38
+55,5,4,QC set,,,99.0,39
+56,5,4,QC packet,,,792.0,40
+57,5,4,field order sorting,,,8676.36,41
+58,5,4,QC set,,,99.0,42
+59,5,4,QC packet,,,792.0,43
+60,5,4,palletize to field order,,,99.0,44
+61,6,4,print packets,,,72000.0,28
+62,6,4,pull source bag,,,30000.0,29
+63,6,4,treat seed (source bag),,,165000.0,30
+64,6,4,associate packets and sources,,,32865.0,31
+65,6,4,agriculex change source,,,255000.0,32
+66,6,4,agriculex pack packets,,,391200.0,33
+67,6,4,agriculex organize sleeve,,,11000.0,34
+68,6,4,agriculex clear out,,,108000.0,35
+69,6,4,sorting sleeve exchange,,,44000.0,36
+70,6,4,plot order sorting,,,10955.0,37
+71,6,4,walk between sets,,,75.0,38
+72,6,4,QC set,,,3000.0,39
+73,6,4,QC packet,,,24000.0,40
+74,6,4,field order sorting,,,262920.0,41
+75,6,4,QC set,,,3000.0,42
+76,6,4,QC packet,,,24000.0,43
+77,6,4,palletize to field order,,,3000.0,44
+78,7,5,print packets,,,1200.0,45
+79,7,5,pull source bag,,,250.0,46
+80,7,5,associate packets and sources,,,273.875,47
+81,7,5,agriculex change source,,,2125.0,48
+82,7,5,agriculex pack packets,,,6520.0,49
+83,7,5,agriculex organize sleeve,,,275.0,50
+84,7,5,agriculex clear out,,,900.0,51
+85,7,5,sorting sleeve exchange,,,1100.0,52
+86,7,5,plot order sorting,,,273.875,53
+87,7,5,walk between sets,,,25.0,54
+88,7,5,QC set,,,50.0,55
+89,7,5,QC packet,,,400.0,56
+90,7,5,field order sorting,,,4382.0,57
+91,7,5,QC set,,,50.0,58
+92,7,5,QC packet,,,400.0,59
+93,7,5,palletize to field order,,,50.0,60
+94,8,4,print packets,,,2880.0,28
+95,8,4,pull source bag,,,1200.0,29
+96,8,4,treat seed (source bag),,,6600.0,30
+97,8,4,associate packets and sources,,,1314.6,31
+98,8,4,agriculex change source,,,10200.0,32
+99,8,4,agriculex pack packets,,,15648.0,33
+100,8,4,agriculex organize sleeve,,,660.0,34
+101,8,4,agriculex clear out,,,4320.0,35
+102,8,4,sorting sleeve exchange,,,2640.0,36
+103,8,4,plot order sorting,,,657.3,37
+104,8,4,walk between sets,,,50.0,38
+105,8,4,QC set,,,120.60301507537687,39
+106,8,4,QC packet,,,960.0,40
+107,8,4,field order sorting,,,10516.8,41
+108,8,4,QC set,,,120.60301507537687,42
+109,8,4,QC packet,,,960.0,43
+110,8,4,palletize to field order,,,120.60301507537687,44
+111,9,4,print packets,,,2880.0,28
+112,9,4,pull source bag,,,1200.0,29
+113,9,4,treat seed (source bag),,,6600.0,30
+114,9,4,associate packets and sources,,,1314.6,31
+115,9,4,agriculex change source,,,10200.0,32
+116,9,4,agriculex pack packets,,,15648.0,33
+117,9,4,agriculex organize sleeve,,,660.0,34
+118,9,4,agriculex clear out,,,4320.0,35
+119,9,4,sorting sleeve exchange,,,2640.0,36
+120,9,4,plot order sorting,,,657.3,37
+121,9,4,walk between sets,,,50.0,38
+122,9,4,QC set,,,120.0,39
+123,9,4,QC packet,,,960.0,40
+124,9,4,field order sorting,,,10516.8,41
+125,9,4,QC set,,,120.0,42
+126,9,4,QC packet,,,960.0,43
+127,9,4,palletize to field order,,,120.0,44
+128,10,4,print packets,,,720.0,28
+129,10,4,pull source bag,,,120.0,29
+130,10,4,treat seed (source bag),,,660.0,30
+131,10,4,associate packets and sources,,,131.46,31
+132,10,4,agriculex change source,,,1020.0,32
+133,10,4,agriculex pack packets,,,3912.0,33
+134,10,4,agriculex organize sleeve,,,132.0,34
+135,10,4,agriculex clear out,,,432.0,35
+136,10,4,sorting sleeve exchange,,,528.0,36
+137,10,4,plot order sorting,,,131.46,37
+138,10,4,walk between sets,,,25.0,38
+139,10,4,QC set,,,30.0,39
+140,10,4,QC packet,,,240.0,40
+141,10,4,field order sorting,,,2629.2,41
+142,10,4,QC set,,,30.0,42
+143,10,4,QC packet,,,240.0,43
+144,10,4,palletize to field order,,,30.0,44
+145,11,4,print packets,,,1320.0,28
+146,11,4,pull source bag,,,220.0,29
+147,11,4,treat seed (source bag),,,1210.0,30
+148,11,4,associate packets and sources,,,241.01,31
+149,11,4,agriculex change source,,,1870.0,32
+150,11,4,agriculex pack packets,,,7172.0,33
+151,11,4,agriculex organize sleeve,,,242.0,34
+152,11,4,agriculex clear out,,,792.0,35
+153,11,4,sorting sleeve exchange,,,968.0,36
+154,11,4,plot order sorting,,,241.01,37
+155,11,4,walk between sets,,,25.0,38
+156,11,4,QC set,,,55.00000000000001,39
+157,11,4,QC packet,,,440.0,40
+158,11,4,field order sorting,,,4820.2,41
+159,11,4,QC set,,,55.00000000000001,42
+160,11,4,QC packet,,,440.0,43
+161,11,4,palletize to field order,,,55.00000000000001,44
+162,12,4,print packets,,,12000.0,28
+163,12,4,pull source bag,,,400.0,29
+164,12,4,treat seed (source bag),,,2200.0,30
+165,12,4,associate packets and sources,,,438.2,31
+166,12,4,agriculex change source,,,3400.0,32
+167,12,4,agriculex pack packets,,,65200.0,33
+168,12,4,agriculex organize sleeve,,,440.0,34
+169,12,4,agriculex clear out,,,1440.0,35
+170,12,4,sorting sleeve exchange,,,1760.0,36
+171,12,4,plot order sorting,,,438.2,37
+172,12,4,walk between sets,,,25.0,38
+173,12,4,QC set,,,500.0,39
+174,12,4,QC packet,,,4000.0,40
+175,12,4,field order sorting,,,43820.0,41
+176,12,4,QC set,,,500.0,42
+177,12,4,QC packet,,,4000.0,43
+178,12,4,palletize to field order,,,500.0,44
+179,13,4,print packets,,,1800.0,28
+180,13,4,pull source bag,,,150.0,29
+181,13,4,treat seed (source bag),,,825.0,30
+182,13,4,associate packets and sources,,,164.325,31
+183,13,4,agriculex change source,,,1275.0,32
+184,13,4,agriculex pack packets,,,9780.0,33
+185,13,4,agriculex organize sleeve,,,165.0,34
+186,13,4,agriculex clear out,,,540.0,35
+187,13,4,sorting sleeve exchange,,,660.0,36
+188,13,4,plot order sorting,,,164.325,37
+189,13,4,walk between sets,,,25.0,38
+190,13,4,QC set,,,75.0,39
+191,13,4,QC packet,,,600.0,40
+192,13,4,field order sorting,,,6573.0,41
+193,13,4,QC set,,,75.0,42
+194,13,4,QC packet,,,600.0,43
+195,13,4,palletize to field order,,,75.0,44
+196,14,4,print packets,,,2700.0,28
+197,14,4,pull source bag,,,200.0,29
+198,14,4,treat seed (source bag),,,1100.0,30
+199,14,4,associate packets and sources,,,219.1,31
+200,14,4,agriculex change source,,,1700.0,32
+201,14,4,agriculex pack packets,,,14670.0,33
+202,14,4,agriculex organize sleeve,,,220.0,34
+203,14,4,agriculex clear out,,,720.0,35
+204,14,4,sorting sleeve exchange,,,880.0,36
+205,14,4,plot order sorting,,,219.1,37
+206,14,4,walk between sets,,,25.0,38
+207,14,4,QC set,,,112.5,39
+208,14,4,QC packet,,,900.0,40
+209,14,4,field order sorting,,,9859.5,41
+210,14,4,QC set,,,112.5,42
+211,14,4,QC packet,,,900.0,43
+212,14,4,palletize to field order,,,112.5,44
+213,15,4,print packets,,,51000.0,28
+214,15,4,pull source bag,,,6000.0,29
+215,15,4,treat seed (source bag),,,33000.0,30
+216,15,4,associate packets and sources,,,6573.0,31
+217,15,4,agriculex change source,,,51000.0,32
+218,15,4,agriculex pack packets,,,277100.0,33
+219,15,4,agriculex organize sleeve,,,6600.0,34
+220,15,4,agriculex clear out,,,21600.0,35
+221,15,4,sorting sleeve exchange,,,26400.0,36
+222,15,4,plot order sorting,,,6573.0,37
+223,15,4,walk between sets,,,25.0,38
+224,15,4,QC set,,,2125.0,39
+225,15,4,QC packet,,,17000.0,40
+226,15,4,field order sorting,,,186235.0,41
+227,15,4,QC set,,,2125.0,42
+228,15,4,QC packet,,,17000.0,43
+229,15,4,palletize to field order,,,2125.0,44
+230,16,4,print packets,,,15600.0,28
+231,16,4,pull source bag,,,1300.0,29
+232,16,4,treat seed (source bag),,,7150.0,30
+233,16,4,associate packets and sources,,,1424.15,31
+234,16,4,agriculex change source,,,11050.0,32
+235,16,4,agriculex pack packets,,,84760.0,33
+236,16,4,agriculex organize sleeve,,,1430.0,34
+237,16,4,agriculex clear out,,,4680.0,35
+238,16,4,sorting sleeve exchange,,,5720.0,36
+239,16,4,plot order sorting,,,1424.15,37
+240,16,4,walk between sets,,,25.0,38
+241,16,4,QC set,,,650.0,39
+242,16,4,QC packet,,,5200.0,40
+243,16,4,field order sorting,,,56966.0,41
+244,16,4,QC set,,,650.0,42
+245,16,4,QC packet,,,5200.0,43
+246,16,4,palletize to field order,,,650.0,44
